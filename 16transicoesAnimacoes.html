@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           html {
+            box-sizing: border-box;
+            font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif; 
+            font-size: calc(1.5vh + 1vw + 1%); 
+            line-height: 1.5; 
+            -moz-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+    
+    body{ 
+        overflow: auto; 
+        min-height: 100vh; 
+        width: 100%; 
+    }
+    main,
+    header{
+        padding:1rem 2rem;
+    }
+    h1{
+        font-size: 3rem;
+        color: orangered;
+    }
+    .box{
+        max-width: 20rem;
+        border: 1px solid #ddd;
+        position:relative;
+    }
+    .box-title{
+        padding: 0.5rem;
+        background-color: hsl(0, 50%, 50%);
+        color: hsl(0, 30%, 95%);
+    }
+    .box-title h2{
+        font-size: 2.0rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        transition: letter-spacing 0.9s;
+    }
+    .box-title .nine{
+        letter-spacing: 9px;
+        color:blue;
+    }
+    .box-content{
+        padding: 0.5rem;
+    }
+    .box-content p{
+        font-size: 1rem;
+        font-weight: 100;
+        color: #333;
+    }
+    .box-content img{
+        width: 30%;
+        height: auto;
+        margin: 0 0.5rem 0.5rem 0;
+        float: left;
+        transform: rotate(15deg);
+        transition: transform 0.6s;
+    }
+    .box-content:hover img{
+        transform: rotate(-15deg);
+    }
+    .box-footer{
+        padding: 1rem 0.5rem;
+        background-color: hsl(220, 20%, 60%);
+        color: hsl(220, 20%, 95%);
+        position: absolute;
+        bottom: 0rem;
+        width: 100%;
+        transform: translateY(0rem);
+        transition: transform 1s cubic-bezier(.97,.28,.08,.69) 0s,
+            color 1s linear 1s,
+            padding 1s ease-in 2s;
+    }
+    .box:hover .box-footer{
+        transform: translateY(4rem);
+        color: red;
+        padding: 2rem;
+    }
+    .box-footer p{
+        font-size: 0.7rem;
+        line-height: 1rem;
+        font-weight: 100;
+        letter-spacing: 2px
+    }
+    </style>
+</head>
+<body>
+    <h1>Transições</h1>
+    <header>
+        <h1>CSS Transitions</h1>
+    </header>
+    <main>
+        <div class="box">
+            <div class="box-title">
+                <h2 class="">The Box Title</h2>
+            </div>
+            <div class="box-content">
+                <p><img src="logo.jpg" alt="avatar image"/> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae itaque accusamus autem, quas ipsum rerum libero consequuntur, quidem iure officiis consequatur provident eligendi vel minima consectetur delectus inventore nemo eum.</p>
+            </div>
+            <div class="box-footer">
+                <p>Some text in the footer area.</p>
+                <p>Another line of footer text.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        let h2 = document.querySelector('.box-title h2');
+        let timmy = setInterval(function(){
+            h2.classList.toggle('nine');
+        }, 2000)
+    </script>
+</body>
+</html>

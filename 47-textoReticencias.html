@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .more{
+            max-width: 90%;
+            position: relative;
+            white-space: nowrap;
+            padding: 1rem;
+            padding-right: 110px;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .more:before{
+            position: absolute;
+            right: 0;
+            bottom: 1rem;
+            line-height: 1.5rem;
+            width: 100px;
+            color: cornflowerblue;
+            text-decoration: underline;
+            content: 'Read More';
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Ellipsis</h1>
+    </header>
+    <main>
+        <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+        <p class="more">Minus cupiditate sint quos delectus libero a necessitatibus eius accusantium corporis doloribus voluptatibus laborum, facere aut eaque at dolorem eveniet officia ducimus. Dolores delectus repellendus natus! Esse doloremque a blanditiis? </p>
+        <p class="more">Facere, consequuntur! </p>
+    </main>
+    
+</body>
+</html>

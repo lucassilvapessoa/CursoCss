@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font: 16px/1.5 Helvetica,Arial,sans-serif;
+        }
+
+       main{
+         padding: 1rem 2rem;
+         margin: 0 2rem;
+         font-size: 1.5rem;
+
+       } 
+       nav{
+          padding: 1rem 0;
+          margin: 0 3rem;
+          overflow: auto;
+       }
+       main p {
+           padding: 0.5rem 0;
+       }
+       nav > a {
+           display: block;
+           float: left;
+           width: 25%;
+           text-align: center;
+           font-size: 1.5rem;
+        
+       }
+       @media(max-width: 600px){
+           nav a {
+               float: none;
+               width: 100%;
+               font-weight: 900;
+               font-size: 2rem;
+           }
+           main h2 {
+               font-size: 3rem;
+           }
+           main{
+               margin: 0 0.5rem;
+           }
+           main p {
+               font-size: 1.6rem;
+               line-height: 1.6;
+               padding: 0.8rem 0 ;
+           }
+       }
+       @media(min-width:1150px){
+          main p{
+               font-size: 1.6rem;
+               column-count: 2;
+               column-gap: 4rem;
+           }
+           main h2{
+               font-size: 3rem;
+           }
+
+       }
+     
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Link1</a>
+        <a href="">Link2</a>
+        <a href="">Link3</a>
+        <a href="">Link4</a>
+    </nav>
+    <main>
+        <h2>Sub Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dignissimos ut maiores nam earum hic iusto? Voluptatum, at ad aliquam saepe maxime id impedit ullam labore temporibus! Quisquam, voluptatum itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil dolores quo recusandae rerum labore veritatis voluptate esse magnam necessitatibus soluta cumque atque molestias eius minima est totam, facilis maxime ad.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis suscipit obcaecati esse adipisci dolorum veritatis eaque, ullam itaque est inventore error eius impedit, mollitia odit aliquam aliquid exercitationem officiis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ullam, eum alias, quam perspiciatis ipsa eius pariatur dolor aperiam, sunt tempore molestias? Voluptates quisquam repellendus magnam, quibusdam optio laudantium sint.</p>
+    </main>
+
+    
+</body>
+</html>

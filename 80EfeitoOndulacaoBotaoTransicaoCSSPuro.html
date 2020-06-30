@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Material Design Ripple Effect</title>
+    <!--
+    Starter Code
+    -->
+    <style>
+      button {
+        border: none;
+        outline: none;
+        padding: 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: white;
+        box-shadow: 0 0 4px #999;
+        cursor: pointer;
+      }
+      .ripple {
+        background-color: hsl(200deg, 50%, 50%);
+        transition: background 0.6s;
+      }
+      .ripple:active {
+        background-color: hsla(200deg, 50%, 50%, 0.32);
+        transition: background 0s;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="ripple">Button</button>
+    <button class="ripple red">Button</button>
+    <button class="ripple light">Button</button>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+     
+    </style>
+</head>
+<body>
+    <main>
+        <h2>HTMl Dropdown lists and DataLists</h2>
+        <form name="my-form" action="" class="formulario">
+            <p class="form-box">
+                <label for="region" title="State of territory">Region</label>
+                <select id="region" name="region">
+                    <optgroup label="States">
+                        <option value="new-south-wales">New south Wales</option>
+                        <option selected value="queensland">queensland</option>
+                        <option value="south-australia">south-australia</option>
+                        <option value="tasmania">tasmania</option>
+                        <option value="victoria">victoria</option>
+                        <option value="western-australia">western-australia</option>
+                    </optgroup>
+                    <optgroup label="territories">
+                        <option value="ashmore-cartier">ashmore-cartier</option>
+                        <option value="australian-cap">australian-cap</option>
+                        <option value="crhistmas-island">crhistmas-island</option>
+                        <option value="cocos-keeling">cocos-keeling</option>
+                    </optgroup>
+                </select>
+            </p>
+        </form>
+        <p class="form-box">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" list="cities">
+        </p>
+        <p class="form-box">
+            <button id="btnSend">Click Me</button>
+        </p>
+        <datalist id="cities">
+           <option value="Adelade"></option>
+           <option value="Brisbane"></option>
+           <option value="Melbourne"></option>
+           <option value="Canberra"></option>
+           <option value="Darwin"></option>
+           <option value="Hobart"></option>
+           <option value="Perty"></option>
+           <option value="Sidney"></option>
+        </datalist>
+    </main>
+</body>
+</html>

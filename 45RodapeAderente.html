@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: relative;
+            min-height: 100vh;
+        }
+        header{
+            text-align: left;
+            height: 100px;
+            background-color:bisque;
+        }
+        h1{
+        
+           font-size: 50px;
+        }
+        p{
+            margin-left: 20px;
+        }
+        footer{
+            background-color: bisque;
+            position: absolute;
+            bottom: 0;
+        }
+        footer p {
+           padding: 50px;
+           width: 100%;
+        }
+        @supports(display: grid){
+            body{
+                position: static;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+            }
+            main{
+                padding-bottom: 1rem;
+            }
+            footer{
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stick Footers</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quod nobis! Nihil nostrum, magni dolores aut illo ex incidunt neque fuga, impedit debitis voluptate tempora maxime sit, amet dolorum fugiat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque quas iste vitae nisi officia aperiam quisquam, eum id illo aspernatur nemo obcaecati consequatur similique doloremque possimus eveniet placeat provident.</p>
+        <p>Autem, aut reiciendis ratione aperiam sed molestiae ipsum quidem fugiat cum explicabo, consequuntur maxime eos, eveniet id veritatis cupiditate quibusdam vero officia magni. Eligendi iusto deserunt similique laudantium exercitationem ea?</p>
+    
+    </main>
+    <footer>
+        <p>&copy; 2018 Squid Inc.</p>
+    </footer>
+    
+</body>
+</html>

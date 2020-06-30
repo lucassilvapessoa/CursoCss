@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Native System Font Stacks</title>
+    <style>
+        /*******************************
+        font-family: 
+            // Safari for OS X and iOS (San Francisco)
+            -apple-system,
+            // Chrome < 56 for OS X (San Francisco)
+            BlinkMacSystemFont,
+            // Windows
+            "Segoe UI",
+            // Android
+            "Roboto",
+            // Basic web fallback
+            "Helvetica Neue", Arial, sans-serif,
+            // Emoji fonts
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" 
+        
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        ***********************************/
+        html{
+            font-size: 16px;
+            line-height: 1.7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial,  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" ;
+        }
+        pre, code{
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+    <!--
+     https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+     
+     https://css-tricks.com/snippets/css/system-font-stack/
+     https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css
+    -->
+    <header>
+        <h1>Main Heading</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et consectetur doloremque, porro repudiandae illo ullam similique, architecto, ipsum aperiam ab aut maxime natus dolore, ex laboriosam minima eaque tempore impedit.</p>
+        <blockquote>~ I'm gonna make him an offer he can't refuse.<br/>
+        ~ Frankly, my dear, I don't give a damn.<br/>
+        ~ What we've got here is failure to communicate.<br/>
+        ~ You can't handle the truth!<br/>
+        ~ Mrs. Robinson, you're trying to seduce me. Aren't you?</blockquote>
+        <p>Minus nulla commodi quasi adipisci quis veniam neque iure, officiis consequatur animi voluptate in accusamus tenetur ipsum qui numquam eos, sed dolores itaque inventore doloremque odio unde eius! Corporis, iusto.</p>
+        <pre><code>
+            const THREE = 3;
+            let log = console.log;
+            let answer = THREE * 4;
+            log(`The answer is ${answer}.`);
+        </code></pre>
+        <p>Vitae aliquam quia placeat, illo harum hic saepe asperiores incidunt at odio. Cupiditate earum obcaecati nihil ratione consequuntur, dolore est animi illo iste porro, consectetur dignissimos quaerat repudiandae ducimus, fugit.</p>
+    </main>
+</body>
+</html>

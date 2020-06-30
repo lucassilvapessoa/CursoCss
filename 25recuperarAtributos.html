@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS attr( ) Method</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css" />
+    <style>
+     
+        p::before{
+            content: attr(data-font)" : "
+        }
+ 
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS attr( ) Method</h1>
+    </header>
+    <main>
+        <p title="bob" data-font="20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt et est cum, dolor repellendus, a ut minima eveniet, non veritatis optio, voluptatibus nihil possimus! Facere accusamus eum, blanditiis consequuntur cumque.</p>
+        <p data-font="30">Commodi animi, veniam maxime quam natus cupiditate esse quia deserunt impedit exercitationem corporis error ducimus pariatur voluptas provident fuga fugit eaque modi temporibus dolores voluptate officia id aut perspiciatis accusamus.</p>
+        <p data-font="40">Assumenda sunt labore dolorum quae quas unde minus repellendus dolor voluptas, iure corrupti quia, officia consectetur ea at odit aspernatur recusandae. Velit quisquam nobis illum sunt earum ab, inventore id.</p>
+    </main>
+</body>
+</html>

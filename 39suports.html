@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @supports(display: grid){
+                 h1{
+                     text-align: center;
+                 }
+
+                p{
+                    font-size: 1rem;
+                    color: gold;
+                    text-align: center;
+                }
+        }
+        @supports not (display: rainbow){
+            p{
+              font-size: 2rem;
+              text-shadow: 2px 2px 2px block;
+              color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>@suports CSS at-rule</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio dolorum tempore ad nam delectus similique dicta. Odio illum accusantium, maiores mollitia ab, sapiente dolores deleniti soluta laudantium beatae, suscipit non!</p>
+    </main>
+    
+</body>
+</html>

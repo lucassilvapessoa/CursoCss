@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Filters</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        li{
+            font-size: 2rem; 
+            color: hsla(90, 50%, 50%, 1);
+        }
+        li:nth-child(1){
+            filter:blur(14px);
+        }
+        li:nth-child(2){
+            filter: brightness(0.5);
+        }
+        li:nth-child(3){
+            filter: contrast(0.8);
+        }
+        li:nth-child(4){
+            filter: drop-shadow(4px 4px 2px #333);
+        }
+        li:nth-child(5){
+            filter: grayscale(1);
+        }
+        li:nth-child(6){
+            filter: hue-rotate(90deg);
+        }
+        li:nth-child(7){
+            filter: invert(1);
+        }
+        li:nth-child(8){
+            filter: opacity(0.1);
+        }
+        li:nth-child(9){
+            filter: saturate(0.5);
+        }
+        li:nth-child(10){
+            filter: sepia(1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Filters</h1>
+    </header>
+    <main>    
+        <ul>
+            <li>blur() <img src="archer-bob.jpg"/></li>
+            <li>brightness() <img src="archer-bob.jpg"/></li>
+            <li>contrast() <img src="archer-bob.jpg"/></li>
+            <li>drop-shadow() <img src="archer-bob.jpg"/></li>
+            <li>grayscale() <img src="archer-bob.jpg"/></li>
+            <li>hue-rotate() <img src="archer-bob.jpg"/></li>
+            <li>invert() <img src="archer-bob.jpg"/></li>
+            <li>opacity() <img src="archer-bob.jpg"/></li>
+            <li>saturate() <img src="archer-bob.jpg"/></li>
+            <li>sepia() <img src="archer-bob.jpg"/></li>
+            <li>url() - for applying SVG filters</li>
+        </ul>
+    </main>
+</body>
+</html>

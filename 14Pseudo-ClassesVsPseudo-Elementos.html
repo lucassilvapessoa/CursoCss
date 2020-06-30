@@ -1,0 +1,102 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        /*
+    Pseudo-Classes - existing element under some condition
+    :hover
+    :active
+    :link
+    :focus
+    :checked
+    :visited
+    :optional
+    :required
+    :valid
+    :invalid
+    :default
+    :disabled
+    :empty
+    :in-range
+    :lang( )
+    :not( )
+    :out-of-range
+    :root
+    :only-of-type
+    :nth-child()
+    :nth-of-type()
+    :first-child
+    :last-child
+    :first-of-type
+    :last-of-type
+    */
+    /*******************
+        Pseudo-Elements - element created 
+        ::after
+        ::before
+        ::first-letter
+        ::first-line
+        ::selection
+        ::cue (WebVTT)
+        ******************/
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            p{
+                color:  red;
+            }
+            p:hover{
+                color: gold;
+                font-weight: 900;
+            }
+            input:required{
+                border: 2px solid #333;
+            }
+            input:optional{
+                font-size: 3rem;
+                margin: 2rem;
+            }
+            input:checked{
+                margin: 4rem;
+            }
+            p:last-of-type{
+                font-size: 2rem;
+            }
+            br:empty{
+                line-height: 4rem;
+            }
+            p::selection{
+                background-color:gold;
+                color: red;
+            }
+            p::first-letter{
+                font-size: 3rem;
+            }
+            p::first-line{
+                color:black;
+            }
+            p::after{
+                content: "😀";
+                padding-left: 1rem;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Pseudo-class vs Pseudo-elements</h1>
+        </header>
+        <main>
+            <h2>Sub Heading</h2>
+            <p>
+                <input type="text" required /><br/>
+                <input type="checkbox" checked />
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae commodi deserunt ipsum cumque molestiae magni cum sunt fuga debitis eum totam impedit, voluptatum quis quas ratione veritatis itaque voluptatem. Optio.</p>
+            <p>Reiciendis deserunt, minima sapiente est numquam. Harum assumenda autem, repellat sapiente ullam earum quae mollitia. Veniam eligendi et autem magni nesciunt soluta, iure nihil rem officia minus quod, voluptatem iste!</p>
+            <p>Laboriosam, non officia porro. Quia veritatis veniam quod nam, rem atque ad, ab eos alias numquam eius. Laboriosam sunt, qui, corporis ullam dolor consequuntur doloremque illo quia est corrupti facilis.</p>
+        </main>
+        
+    </body>
+    </html>
